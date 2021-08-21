@@ -10,28 +10,29 @@ body {
 }
 
 .container {
-    max-width: 1350px;
-    background: linear-gradient(to right top, #ebebf3, white);
-    height: 95vh;
-    margin: auto;
-    padding: 50px;
-    margin-top: 20px;
-    margin-bottom: 50px;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: space-around;       
+    height: 95vh;
+    margin: 20px 30px 50px 30px;
+    padding: 50px;    
+    background: #E4E4EF;
+    background: -webkit-linear-gradient(bottom right, #E4E4EF, #FEFEFF);
+    background: -moz-linear-gradient(bottom right, #E4E4EF, #FEFEFF);
+    background: linear-gradient(to top left, #E4E4EF, #FEFEFF);  
 }
 
+
+
 .mainBox {
-    width: 50%;
-    height: 100%;    
+    max-width: 50%;       
     padding: 20px;    
 }
 
 /*mainBox left*/
 
 .mainBoxLeft {
-    padding-top: 80px;
-        
+    padding-top: 80px;        
 }
 
 h5 {
@@ -74,15 +75,16 @@ p {
     padding: 10px 20px;
     font-weight: 700;
     position: relative;
-    z-index: 3; 
+    z-index: 3;
+    width: 80px;
 }
 
 /*mainbox Right*/
 
 .mainBoxRight {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: -30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .verticalBox {
@@ -90,10 +92,13 @@ p {
     height: 100%;
     position: relative;
     z-index: 3;    
+    justify-content: space-around;
+        
 }
 
 .verticalBoxRight {
-    margin-top: 20px;    
+    margin-top: 20px;
+    margin-left: 10px;    
 }
 
 /*smallBox inside mainBox Right*/
@@ -160,7 +165,7 @@ p {
 }
 
 .quarter.blue {
-    background-color:#ececf8;    
+    background-color:#eeeef5;    
     clip: rect(0px, 440px, 440px, 30px);
     width: 900px;
     margin-bottom: -11px;
@@ -173,20 +178,21 @@ p {
 .triangle {
 	position: absolute;
     width: 0;
-	height: 0;
-	border-top: 400px solid #f3f3fa;
+	height: -100px;
+	border-top: 400px solid #eeeef7;
 	border-left: 400px solid transparent;
 	margin: 25px auto 0;
     z-index: 1;
     margin-top: -40px;
-    margin-left: 255px;        
+    margin-left: 220px;
+        
 }
 
 .triangleSmall {
 	position: absolute;
     width: 0;
 	height: 0;
-	border-top: 220px solid #f3f3fa;
+	border-top: 220px solid #e8e8f3;
 	border-left: 220px solid transparent;
 	margin: 25px auto 0;
     z-index: 1;
@@ -194,6 +200,59 @@ p {
     margin-left: 185px;    
 }
 
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;        
+    }
+
+    .mainBox {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .verticalBoxRight {
+        margin-left: 0;
+    }
+    
+    .triangle, .circle, .quater, .triangleSmall {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+    .container {
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-around;
+                
+    }
+
+    .mainBox {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto 0 auto;             
+    }
+
+        
+    .verticalBoxRight {
+        margin-left: 5px;
+    }
+    
+    .triangle, .circle, .quater, .triangleSmall {
+        display: none;
+    }
+
+}
 
 
 
