@@ -24,7 +24,7 @@ body {
 
 .mainBox {
   max-width: 50%;
-  padding: 20px;
+  padding: 0px;
 }
 
 /*mainBox left*/
@@ -155,8 +155,8 @@ p {
   position: relative;
   width: 900px;
   height: 900px;
-  top: -220px;
-  left: -100px;
+  top: -242px;
+  left: -80px;
 }
 
 .quarter {
@@ -185,8 +185,8 @@ p {
   border-left: 400px solid transparent;
   margin: 25px auto 0;
   z-index: 1;
-  margin-top: -40px;
-  margin-left: 220px;
+  margin-top: -20px;
+  margin-left: 307px;
 }
 
 .triangleSmall {
@@ -218,6 +218,7 @@ p {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
+    margin-top: 10px;
   }
   .verticalBoxRight {
     margin-left: 0;
