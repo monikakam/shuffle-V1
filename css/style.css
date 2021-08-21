@@ -32,6 +32,10 @@ body {
   padding-top: 80px;
 }
 
+span {
+  color: blue;
+}
+
 h5 {
   text-transform: uppercase;
   color: #8a8ad3;
