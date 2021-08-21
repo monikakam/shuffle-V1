@@ -16,7 +16,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 95vh;
-  margin: 20px 30px 50px 30px;
+  margin: 20px 90px 50px 90px;
   padding: 50px;
   background: #E4E4EF;
   background: linear-gradient(to top left, #E4E4EF, #FEFEFF);
@@ -99,14 +99,14 @@ p {
 
 .verticalBoxRight {
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 /*smallBox inside mainBox Right*/
 .smallBox {
-  width: 270px;
-  height: 230px;
-  padding: 16px;
+  width: 290px;
+  height: 250px;
+  padding: 25px;
   margin-top: 20px;
   background-color: white;
   border-radius: 5px;
@@ -118,32 +118,36 @@ p {
   line-height: 1.5;
 }
 
+.smallBox h3 {
+  line-height: 1.7;
+}
+
 .buildingBlue {
-  background-color: #a1c5f5;
+  background-color: #b3d1f8;
   color: #5298f3;
   border-radius: 5px;
-  padding: 6px;
+  padding: 10px 6px;
 }
 
 .buildingYellow {
   background-color: #f5eda1;
   color: #f3c852;
   border-radius: 5px;
-  padding: 6px;
+  padding: 10px 6px;
 }
 
 .buildingGreen {
-  background-color: #a4f5a1;
-  color: #66be1e;
+  background-color: #b4ddc9;
+  color: #779e56;
   border-radius: 5px;
-  padding: 6px;
+  padding: 10px 6px;
 }
 
 .buildingPurple {
   background-color: #d6a1f5;
   color: #b852f3;
   border-radius: 5px;
-  padding: 6px;
+  padding: 10px 6px;
 }
 
 /*circle*/
@@ -194,7 +198,7 @@ p {
   margin: 25px auto 0;
   z-index: 1;
   margin-top: 180px;
-  margin-left: 185px;
+  margin-left: -10px;
 }
 
 @media (max-width: 768px) {

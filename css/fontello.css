@@ -54,4 +54,4 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-commerical-building:before { content: '\e811'; font-size: 20px;} /* '' */
+.icon-commerical-building:before { content: '\e811'; font-size: 20px; height: 30px;} /* '' */
