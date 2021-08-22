@@ -4,7 +4,7 @@
 
 body {
   background-color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: darkblue;
 }
 
@@ -132,7 +132,7 @@ p {
 
 .buildingYellow {
   background-color: #f5eda1;
-  color: #e9b23c;
+  color: #f0bb48;
   border-radius: 5px;
   padding: 10px 6px;
 }
